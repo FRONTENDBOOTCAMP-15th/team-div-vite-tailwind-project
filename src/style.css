@@ -1,0 +1,8 @@
+@import 'tailwindcss';
+@import './common/a11y.css';
+@import './common/modern-reset.css';
+@import './common/theme.css';
+
+@theme {
+  --font-pretendard: 'Pretendard Variable';
+}
