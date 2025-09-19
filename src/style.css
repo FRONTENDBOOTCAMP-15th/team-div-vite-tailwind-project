@@ -6,3 +6,11 @@
 @theme {
   --font-pretendard: 'Pretendard Variable';
 }
+
+body {
+  @media (width <=850px) {
+    ul {
+      display: none;
+    }
+  }
+}
