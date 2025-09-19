@@ -8,9 +8,4 @@
 }
 
 body {
-  @media (width <=850px) {
-    ul {
-      display: none;
-    }
-  }
 }
