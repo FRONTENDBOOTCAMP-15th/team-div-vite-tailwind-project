@@ -2,6 +2,7 @@
 @import "./common/a11y.css";
 @import "./common/modern-reset.css";
 @import "./common/theme.css";
+@import "../src/css/apply.css";
 
 @theme {
   /* color */
