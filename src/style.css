@@ -1,7 +1,7 @@
-@import 'tailwindcss';
-@import './common/a11y.css';
-@import './common/modern-reset.css';
-@import './common/theme.css';
+@import "tailwindcss";
+@import "./common/a11y.css";
+@import "./common/modern-reset.css";
+@import "./common/theme.css";
 
 @theme {
   /* color */
@@ -15,13 +15,13 @@
   --color-textPrimary: var(--textPrimary-color);
   --color-textSecondary: var(--textSecondary-color);
   --color-textTertiary: var(--textTertiary-color);
-  --border-color: var(--border-color);
+  --color-border: var(--border-color);
   --color-borderBackground: var(--borderBackground-color);
   --color-positiveBackground: var(--positiveBackground-color);
   --color-negativeBackground: var(--negativeBackground-color);
 
   /* font-family */
-  --font-pretendard: 'Pretendard Variable';
+  --font-pretendard: "Pretendard Variable";
 
   /* font-size */
   --text-xxxl: 50px;
