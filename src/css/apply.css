@@ -1,0 +1,58 @@
+@layer components {
+  a {
+    @apply p-1 text-textPrimary text-md font-semibold no-underline border-b;
+
+    &.more-view {
+      @apply ml-auto;
+    }
+  }
+
+  .input,
+  .select {
+    @apply w-full;
+  }
+
+  .input {
+    input {
+      @apply w-full p-3 text-textSecondary text-md bg-borderBackground border border-solid border-border;
+
+      &:user-valid {
+        @apply bg-positiveBackground border-transparent outline-2 outline-solid outline-positive;
+      }
+
+      &:user-invalid {
+        @apply bg-negativeBackground border-transparent outline-2 outline-solid outline-negative;
+
+        & ~ .error-message {
+          @apply block;
+        }
+
+        & ~ .password-reset-button {
+          @apply block;
+        }
+      }
+    }
+
+    .error-message {
+      @apply hidden mt-1 text-negative text-sm;
+    }
+
+    .password-reset-button {
+      @apply hidden absolute right-[1px] top-[1px] p-[11px] bg-transparent border-none;
+
+      svg {
+        @apply hidden;
+      }
+    }
+  }
+
+  .select {
+    select {
+      @apply w-full h-12 pr-3 pl-3 text-textPrimary text-md font-semibold bg-borderBackground border border-solid border-border appearance-none;
+    }
+  }
+}
+
+@utility w-half {
+  inline-size: calc((100% - 16px) / 2);
+}

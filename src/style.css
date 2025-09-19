@@ -1,8 +1,41 @@
-@import 'tailwindcss';
-@import './common/a11y.css';
-@import './common/modern-reset.css';
-@import './common/theme.css';
+@import "tailwindcss";
+@import "./common/a11y.css";
+@import "./common/modern-reset.css";
+@import "./common/theme.css";
+@import "../src/css/apply.css";
 
 @theme {
-  --font-pretendard: 'Pretendard Variable';
+  /* color */
+  --color-primary: var(--primary-color);
+  --color-secondary: var(--secondary-color);
+  --color-tertiary: var(--tertiary-color);
+  --color-accent: var(--accent-color);
+  --color-negative: var(--negative-color);
+  --color-warning: var(--warning-color);
+  --color-positive: var(--positive-color);
+  --color-textPrimary: var(--textPrimary-color);
+  --color-textSecondary: var(--textSecondary-color);
+  --color-textTertiary: var(--textTertiary-color);
+  --color-border: var(--border-color);
+  --color-borderBackground: var(--borderBackground-color);
+  --color-positiveBackground: var(--positiveBackground-color);
+  --color-negativeBackground: var(--negativeBackground-color);
+
+  /* font-family */
+  --font-pretendard: "Pretendard Variable";
+
+  /* font-size */
+  --text-xxxl: 50px;
+  --text-xxl: 38px;
+  --text-xl: 28px;
+  --text-lg: 20px;
+  --text-md: 16px;
+  --text-sm: 12px;
+}
+
+/* 공통 inner layout */
+@utility w-inner {
+  inline-size: 1280px;
+  margin: 0 auto;
+  padding: 64px;
 }
